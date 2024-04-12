@@ -1,30 +1,30 @@
 ## Introdução
-Percebi que há vários desenvolvedores juniores na comunidade de desenvolvimento de software em busca de ideias para portfólio ou para expandir seus conhecimentos técnicos.
+Percebi que há vários desenvolvedores juniores na comunidade de desenvolvimento de software em busca de idéias para portfólio ou para expandir seus conhecimentos técnicos.
 
 Idealmente, um aplicativo para este fim não deve ser muito simples, pois os participantes perderiam o interesse; nem muito difícil, pois demandaria muito tempo ou estaria além das capacidades esperadas de um iniciante. Além disso, é bom restringirmos a algum problema com fins práticos, já que problemas abstratos podem ser encontrados em plataformas como [HackerRank](https://www.hackerrank.com) ou [LeetCode](https://leetcode.com).
 
-Minha ideia é especificar os requisitos de um aplicativo, porém sem especificar qual tecnologia utilizar. Dessa forma, o projeto fica bastante genérico e abrangente, permitindo que qualquer pessoa possa participar.
+Minha idéia é especificar os requisitos de um aplicativo, porém sem especificar qual tecnologia utilizar. Dessa forma, o projeto fica bastante genérico e abrangente, permitindo que qualquer pessoa possa participar.
 
-Esta ideia estará em constante evolução, sendo esta a Draft-v0.1. Vou deixar o conteúdo deste texto neste GitHub. Estou aberto a comentários e novas idéias. Todos são bem-vindos a criar pull requests no projeto.
+Esta idéia estará em constante evolução, sendo esta a Draft-v0.1. Vou deixar o conteúdo deste texto neste GitHub. Estou aberto a comentários e novas idéias. Todos são bem-vindos a criar pull requests no projeto.
 
 >[!Note]
 > Quando necessario, vou colocar algumas notas técnica para exclarecimento.
 
-##  A ideia do aplicativo
+##  A idéia do aplicativo
 Um dia qualquer, você vai almoçar com alguns amigos e um deles te apresenta ao Geraldo. Seu amigo comentou com Geraldo que você está aprendendo desenvolvimento de software. Geraldo é muito carismático e te explica um pouco da rotina dele, dizendo:
 
 "Trabalho em uma empresa de médio porte e nosso escritório fica na região suburbana. Temos vários cubículos, algumas salas e um pequeno showroom para mostrar nosso trabalho para potenciais clientes. Além disso, temos um galpão com vários itens para ajudar no funcionamento da empresa. Lá você vai encontrar de tudo um pouco, incluindo: material de escritório, equipamento de manutenção da propriedade, equipamento de áudio e até equipamento de pesca. Nosso chefe adora pescar e, de vez em quando, os funcionários vão pescar juntos em um lago próximo ao nosso escritório."
 
-"Pois então, eu gostaria de falar de um probleminha que temos em nosso galpão. Para ser franco, nós temos um péssimo controle do que entra e sai daquele galpão. Nunca tivemos furto, pelo menos não estou ciente de nenhum, contudo é difícil saber o que está no galpão em um determinado momento. Se algum item não está no galpão, temos que ficar enviando mensagens para os funcionários procurando saber quem está com o quê. Eu deixei um livro na entrada do galpão, e agora quem pegar ou devolver um item tem que escrever o que foi retirado ou devolvido. A ideia é boa, mas tem problemas; quando quero saber o inventário do galpão, tenho que ler várias entradas do livro para ter uma ideia dos itens do galpão. Às vezes, desisto do livro e saio olhando no galpão mesmo."
+"Pois então, eu gostaria de falar de um probleminha que temos em nosso galpão. Para ser franco, nós temos um péssimo controle do que entra e sai daquele galpão. Nunca tivemos furto, pelo menos não estou ciente de nenhum, contudo é difícil saber o que está no galpão em um determinado momento. Se algum item não está no galpão, temos que ficar enviando mensagens para os funcionários procurando saber quem está com o quê. Eu deixei um livro na entrada do galpão, e agora quem pegar ou devolver um item tem que escrever o que foi retirado ou devolvido. A idéia é boa, mas tem problemas; quando quero saber o inventário do galpão, tenho que ler várias entradas do livro para ter uma idéia dos itens do galpão. Às vezes, desisto do livro e saio olhando no galpão mesmo."
 
 "Bom, acho que você já entendeu o problema que quero resolver. Eu poderia criar uma tabela no Excel para resolver este problema. Contudo, gostaria de algo melhor do que o Excel, pois no futuro, eu quero implementar esta mesma solução em outros escritórios de nossos clientes que disseram ter o mesmo problema. No futuro, até imagino colocar uma maquininha tipo aquelas de supermercado para ler código de barras que identifica o produto na retirada ou devolução. Vai ficar show."
 
 "Você toparia desenvolver este software comigo?"
 
-Vocês acertam a forma de pagamento e Geraldo está muito entusiasmado com a ideia. Ele te convida para visitar a sede da empresa e você confirma que o que Geraldo disse é verdade. Na verdade, as coisas são um pouco piores do que ele disse, mas a essência do que ele te contou está correta. Geraldo começa a pensar em um nome para o aplicativo; ele sugere "Empresta Fácil", mas nada está decidido ainda.
+Vocês acertam a forma de pagamento e Geraldo está muito entusiasmado com a idéia. Ele te convida para visitar a sede da empresa e você confirma que o que Geraldo disse é verdade. Na verdade, as coisas são um pouco piores do que ele disse, mas a essência do que ele te contou está correta. Geraldo começa a pensar em um nome para o aplicativo; ele sugere "Empresta Fácil", mas nada está decidido ainda.
 
 ## Como o aplicativo vai solucionar o problema
-Antes de começarmos a codificar, é uma boa ideia pensar em como o software vai funcionar de maneira geral. Devemos identificar os problemas concretos que os usuários do aplicativo estão enfrentando e como o aplicativo pode solucionar esses problemas. Por exemplo, podemos identificar alguns problemas óbvios: não saber o inventário com precisão e não saber qual funcionário está com determinado item. Podemos assumir alguns outros problemas, por exemplo, saber qual a data prevista de devolução, mas observe que este requisito nunca foi mencionado. Pode até ser uma boa ideia, mas por enquanto, vamos deixar o escopo o menor possível.
+Antes de começarmos a codificar, é uma boa idéia pensar em como o software vai funcionar de maneira geral. Devemos identificar os problemas concretos que os usuários do aplicativo estão enfrentando e como o aplicativo pode solucionar esses problemas. Por exemplo, podemos identificar alguns problemas óbvios: não saber o inventário com precisão e não saber qual funcionário está com determinado item. Podemos assumir alguns outros problemas, por exemplo, saber qual a data prevista de devolução, mas observe que este requisito nunca foi mencionado. Pode até ser uma boa idéia, mas por enquanto, vamos deixar o escopo o menor possível.
 
 Primeiro vamos focar no mais importante: os empréstimos. Antes de realizarmos um empréstimo, temos que saber qual o _item_ a ser emprestado para uma _pessoa_; ou seja, a funcionalidade de empréstimo depende de outras funcionalidades, portanto, temos que implementar as dependências primeiro.
 
