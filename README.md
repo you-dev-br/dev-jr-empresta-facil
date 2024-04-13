@@ -5,7 +5,7 @@ Idealmente, um aplicativo para este fim não deve ser muito simples, pois os par
 
 Minha idéia é especificar os requisitos de um aplicativo, porém sem especificar qual tecnologia utilizar. Dessa forma, o projeto fica bastante genérico e abrangente, permitindo que qualquer pessoa possa participar.
 
-Esta idéia estará em constante evolução, sendo esta a Draft-v0.1. Vou deixar o conteúdo deste texto neste GitHub. Estou aberto a comentários e novas idéias. Todos são bem-vindos a criar pull requests no projeto.
+Esta idéia estará em constante evolução, sendo esta a versão **v0.1**. Vou deixar o conteúdo deste texto neste GitHub. Estou aberto a comentários e novas idéias. Todos são bem-vindos a criar pull requests no projeto.
 
 >[!Note]
 > Quando necessario, vou colocar algumas notas técnica para exclarecimento.
